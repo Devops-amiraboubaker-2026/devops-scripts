@@ -40,6 +40,7 @@ services:
     ports:
       - 8081:8081
     environment:
+      PORT: "8081"  # Port to run mongo express
       ME_CONFIG_MONGODB_URL: mongodb://root:pass-123@mongodb:27017/?authSource=admin
       ME_CONFIG_BASICAUTH_ENABLED: "true"
       ME_CONFIG_BASICAUTH_USERNAME: user
